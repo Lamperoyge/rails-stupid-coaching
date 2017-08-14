@@ -1,0 +1,13 @@
+<% answer = nil %>
+
+
+<h2><% if @user_ask == "hello"
+      answer = "bye"
+    else
+      answer = "i don't care"
+    end %>
+      <%= answer %>
+    </h2>
+
+
+<h4><%= link_to "ask another question", '/ask', :method => :get %></h4>
